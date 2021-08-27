@@ -31,4 +31,45 @@ let petsAsArray = [
     "Chihuahua", // 1
 ]
 
-let petsAsObject
+let petsAsObject = {
+    "0": "Parakeet",
+    "1": "Chihuahua",
+    "length": 2,
+}
+
+
+let programmingAuthors = [
+  {
+    name: "Eric A. Meyer",
+    careerStateDate: 1993,
+    expertSubjects: ['HTML', 'CSS', 'Web Standards'],
+    books: [
+      "Design For Real Life",
+      "Cascading Style Sheets: The Definitive Guide",
+      "Smashing CSS",
+      "Eric Meyer on CSS and More Eric Meyer on CSS",
+      "CSS2.0 Programmer's Reference",
+      "CSS Web Site Design",
+    ],
+  },
+  {
+    name: "Kyle Simpson (a.k.a. Getify)",
+    careerStateDate: null,
+    expertSubjects: ["JavaScript", "CSS", "HTML", "React.js", "Node.js"],
+    books: ["You Don't Know JS", "You Don't Know JS Yet", "You Don't Know Closures"],
+  }
+]
+
+
+function getMovement (direction) {
+  const directions = {
+    right: [+1, 0],
+    left:  [-1, 0],
+    down:  [0, +1],
+    up:    [0, -1],
+  }
+  
+  return directions[direction]
+}
+
+getMovement("left")
